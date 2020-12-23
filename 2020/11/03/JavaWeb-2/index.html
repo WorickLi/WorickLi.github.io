@@ -1,0 +1,182 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaWeb(2) | Worick</title>
+
+  
+  <meta name="author" content="John Doe">
+  
+
+  
+  <meta name="description" content="JavaWebCSS技术介绍控制网页样式
+CSS语法规则选择器 属性 值
+例如：
+1234p&amp;#123;	color:red;       /*一般一行一个属性*/    font-size:30px;&amp;#125;
+
+
+
+CSS与HTML的结合方式1在标签的style属性上设置“key:value ">
+  
+
+  
+  
+  <meta name="keywords" content="JavaWeb">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="JavaWeb(2)"/>
+
+  <meta property="og:site_name" content="Worick"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Worick" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Worick</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>JavaWeb(2)</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2020/11/03/JavaWeb-2/" rel="bookmark">
+        <time class="entry-date published" datetime="2020-11-03T08:12:29.000Z">
+          2020-11-03
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="JavaWeb"><a href="#JavaWeb" class="headerlink" title="JavaWeb"></a>JavaWeb</h1><h2 id="CSS技术介绍"><a href="#CSS技术介绍" class="headerlink" title="CSS技术介绍"></a>CSS技术介绍</h2><p>控制网页样式</p>
+<h2 id="CSS语法规则"><a href="#CSS语法规则" class="headerlink" title="CSS语法规则"></a>CSS语法规则</h2><p>选择器 属性 值</p>
+<p>例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">p</span>&#123;</span><br><span class="line">	<span class="attribute">color</span>:red;       <span class="comment">/*一般一行一个属性*/</span></span><br><span class="line">    <span class="attribute">font-size</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="CSS与HTML的结合方式"><a href="#CSS与HTML的结合方式" class="headerlink" title="CSS与HTML的结合方式"></a>CSS与HTML的结合方式</h2><h3 id="1"><a href="#1" class="headerlink" title="1"></a>1</h3><p>在标签的style属性上设置“key:value value;”，修改标签样式</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;border: 1px solid red;&quot;</span>&gt;</span>div标签1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;border: 1px solid red;&quot;</span>&gt;</span>div标签2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;border: 1px solid red;&quot;</span>&gt;</span>span标签1<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">span</span> <span class="attr">style</span>=<span class="string">&quot;border: 1px solid red;&quot;</span>&gt;</span>span标签2<span class="tag">&lt;/<span class="name">span</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>缺点：若标签过多，代码量大  ；可读性差；css代码无复用性可言</p>
+<h3 id="2"><a href="#2" class="headerlink" title="2"></a>2</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!--</span></span><br><span class="line"><span class="comment">        style标签转盟用来定义css样式代码</span></span><br><span class="line"><span class="comment">    --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">style</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span>&gt;</span></span><br><span class="line">        div&#123;</span><br><span class="line">            border: 1px solid red;</span><br><span class="line">        &#125;</span><br><span class="line">        span&#123;</span><br><span class="line">            border: 1px solid red;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>缺点：只能在同一页面内进行复用；难以维护；</p>
+<h3 id="3"><a href="#3" class="headerlink" title="3"></a>3</h3><p>把css样式写成单独的页面，用link复用</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text/css&quot;</span> <span class="attr">href</span>=<span class="string">&quot;../css/1.css&quot;</span>/&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="CSS选择器"><a href="#CSS选择器" class="headerlink" title="CSS选择器"></a>CSS选择器</h2><h3 id="标签名选择器"><a href="#标签名选择器" class="headerlink" title="标签名选择器"></a>标签名选择器</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">div&#123;</span><br><span class="line">          border: 1px solid yellow;</span><br><span class="line">          color: blue;</span><br><span class="line">          font-size: 30px;</span><br><span class="line">      &#125;</span><br><span class="line">      span&#123;</span><br><span class="line">          border: 5px dashed blue;</span><br><span class="line">          color: yellow;</span><br><span class="line">          font-size: 20px;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+
+<p>标签名选择器基于决定哪些标签被动的选择这个样式</p>
+<h3 id="id选择器"><a href="#id选择器" class="headerlink" title="id选择器"></a>id选择器</h3><p>#id 属性值{</p>
+<p>​    属性：值；</p>
+<p>}</p>
+<p>id选择器，可以让我们通过id属性选择性的去使用这个样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-id">#id001</span>&#123;</span><br><span class="line">          <span class="attribute">color</span>: blue;</span><br><span class="line">          <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">          <span class="attribute">border</span>: <span class="number">1px</span> yellow solid;</span><br><span class="line">      &#125;</span><br><span class="line">      <span class="selector-id">#id002</span>&#123;</span><br><span class="line">          <span class="attribute">color</span>: red;</span><br><span class="line">          <span class="attribute">font-size</span>: <span class="number">20px</span>;</span><br><span class="line">          <span class="attribute">border</span>: <span class="number">5px</span> blue dotted;</span><br><span class="line">      &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="class选择器（类选择器）"><a href="#class选择器（类选择器）" class="headerlink" title="class选择器（类选择器）"></a>class选择器（类选择器）</h3><p>class类型选择器格式</p>
+<p>.class属性值{</p>
+<p>​    属性：值；</p>
+<p>}</p>
+<p>class类型选择器，可以通过class属性有效的选择性的去使用这个样式</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.class01</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: blue;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">1px</span> yellow solid;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">div</span><span class="selector-class">.class02</span>&#123;</span><br><span class="line">    <span class="attribute">color</span>: grey;</span><br><span class="line">    <span class="attribute">font-size</span>: <span class="number">26px</span>;</span><br><span class="line">    <span class="attribute">border-bottom</span>: <span class="number">1px</span> solid red;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="组合选择器"><a href="#组合选择器" class="headerlink" title="组合选择器"></a>组合选择器</h3><p>组合选择器合适</p>
+<p>​    选择器1,选择器2,选择器3{</p>
+<p>​        属性：值；</p>
+<p>​    }</p>
+<p>多个共用</p>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&lt;style type=&quot;text/css&quot;&gt;</span><br><span class="line">    <span class="selector-class">.class01</span>,<span class="selector-id">#id01</span>&#123;</span><br><span class="line">        <span class="attribute">color</span>: blue;</span><br><span class="line">        <span class="attribute">font-size</span>: <span class="number">30px</span>;</span><br><span class="line">        <span class="attribute">border</span>: <span class="number">1px</span> yellow solid;</span><br><span class="line">    &#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="CSS常用样式"><a href="#CSS常用样式" class="headerlink" title="CSS常用样式"></a>CSS常用样式</h2><p>color;border;height;width;backgroud-color;font-size;margin-left;margin-right;text-align;text-decoration;</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/JavaWeb/">JavaWeb</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2020 John Doe
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>

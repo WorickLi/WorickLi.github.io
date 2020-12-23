@@ -1,0 +1,277 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>JavaWeb(3) | Worick</title>
+
+  
+  <meta name="author" content="John Doe">
+  
+
+  
+  <meta name="description" content="JavascriptJS介绍JS完成页面的数据验证，运行在客户端，运行浏览器解析代码。
+JS弱类型，Java强类型
+强类型，即定义变量的时候。类型已确定
+
+交互性
+安全性
+跨平台性
+
+JS与html代码的结合
+在head中中设置script标签
+12345&amp;lt;script type=&amp;quot;">
+  
+
+  
+  
+  <meta name="keywords" content="JavaWeb">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="JavaWeb(3)"/>
+
+  <meta property="og:site_name" content="Worick"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="Worick" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+<meta name="generator" content="Hexo 5.2.0"></head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">Worick</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>JavaWeb(3)</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2020/11/06/JavaWeb-3/" rel="bookmark">
+        <time class="entry-date published" datetime="2020-11-06T07:25:57.000Z">
+          2020-11-06
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h1 id="Javascript"><a href="#Javascript" class="headerlink" title="Javascript"></a>Javascript</h1><h3 id="JS介绍"><a href="#JS介绍" class="headerlink" title="JS介绍"></a>JS介绍</h3><p>JS完成页面的数据验证，运行在客户端，运行浏览器解析代码。</p>
+<p>JS弱类型，Java强类型</p>
+<p>强类型，即定义变量的时候。类型已确定</p>
+<ul>
+<li>交互性</li>
+<li>安全性</li>
+<li>跨平台性</li>
+</ul>
+<h3 id="JS与html代码的结合"><a href="#JS与html代码的结合" class="headerlink" title="JS与html代码的结合"></a>JS与html代码的结合</h3><ul>
+<li><p>在head中中设置script标签</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><br><span class="line">    <span class="comment">//alert是Javascript语言提供的警告框函数</span></span><br><span class="line">    <span class="comment">//它可以接受任意类型的参数，这个参数就是警告框的提示信息</span></span><br><span class="line">    alert(<span class="string">&quot;hello javascript!&quot;</span>);</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>引用</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--</span><br><span class="line">    使用script引入外部的js文件</span><br><span class="line">        src属性专门用来引入js文件路径（可以是相对路径 也可以是绝对路径）</span><br><span class="line">     script标签可以用来定义，也可用来引入</span><br><span class="line">     两个功能二选一使用，不能同时使用</span><br><span class="line">--&gt;</span><br><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;1.js&quot;</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span>&gt;alert(<span class="string">&quot;哈哈&quot;</span>)&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h3><h4 id="类型"><a href="#类型" class="headerlink" title="类型"></a>类型</h4><ul>
+<li>数值类型：number</li>
+<li>字符串类型:string</li>
+<li>对象类型:object</li>
+<li>布尔类型:boolean</li>
+<li>函数类型:function</li>
+</ul>
+<h4 id="特殊值"><a href="#特殊值" class="headerlink" title="特殊值"></a>特殊值</h4><ul>
+<li>undefined 未定义，，所有js变量未赋予初值时，默认未undefined</li>
+<li>null ：空值</li>
+<li>NAN：Not A Number 非数字 非数值</li>
+</ul>
+<h4 id="关系运算"><a href="#关系运算" class="headerlink" title="关系运算"></a>关系运算</h4><ul>
+<li>等于 ==   简单的做字面值的比较</li>
+<li>全等于=== 除了字面值还比较数据类型</li>
+</ul>
+<h4 id="逻辑运算"><a href="#逻辑运算" class="headerlink" title="逻辑运算"></a>逻辑运算</h4><p>js里所有变量都可以作为一个boolean类型的变量去使用</p>
+<p>0 null undefined “”(空串)都认为是false</p>
+<ul>
+<li>&amp;&amp;且运算<ul>
+<li>当表达式全为真时，返回最后一个表达式的值</li>
+<li>当表达式有一个为假时。返回第一个为假的表达式的值</li>
+</ul>
+</li>
+<li>||或运算<ul>
+<li>表达式全为假，返回最后一个表达式的值</li>
+<li>表达式为真，返回第一个真的值</li>
+</ul>
+</li>
+<li>&amp;&amp;运算和||有短路，当&amp;&amp; ||有结果时，后面的表达式不再执行</li>
+</ul>
+<h3 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h3><p>var 数组名=[]// 空数组</p>
+<p>var 数组名=[1,’abc’,true];</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><h3 id="JS自定义对象"><a href="#JS自定义对象" class="headerlink" title="JS自定义对象"></a>JS自定义对象</h3><h3 id="JS中的事件"><a href="#JS中的事件" class="headerlink" title="JS中的事件"></a>JS中的事件</h3><ul>
+<li><p>onload事件</p>
+</li>
+<li><p>onclick事件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="function"><span class="keyword">function</span> <span class="title">onclickfun</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">&quot;静态注册onclick事件&quot;</span>);</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="comment">//动态注册onclick事件</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.onload =<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">//获取标签对象</span></span></span><br><span class="line">            /*</span><br><span class="line"><span class="javascript">            * <span class="built_in">document</span>是JS语言提供的一个对象</span></span><br><span class="line">            * 通过id属性获取标签对象</span><br><span class="line">            * */</span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> btnObj=<span class="built_in">document</span>.getElementById(<span class="string">&quot;btn01&quot;</span>);</span></span><br><span class="line"><span class="javascript">            <span class="comment">//alert(btnObj);</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//通过标签对象。事件名=function()&#123;&#125;</span></span></span><br><span class="line"><span class="javascript">            btnObj.onclick=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                alert(<span class="string">&quot;动态注册的onclick事件&quot;</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--静态注册onclick事件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;onclickfun();&quot;</span>&gt;</span>按钮1<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">button</span> <span class="attr">id</span>=<span class="string">&quot;btn01&quot;</span>&gt;</span>按钮2<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>onchange事件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="function"><span class="keyword">function</span> <span class="title">onchangeFun</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            alert(<span class="string">&quot;女神已经改变了&quot;</span>);</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> selObj=<span class="built_in">document</span>.getElementById(<span class="string">&quot;sel01&quot;</span>);</span></span><br><span class="line"><span class="javascript">            <span class="comment">//alert(selObj);</span></span></span><br><span class="line"><span class="javascript">            selObj.onchange=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                alert(<span class="string">&quot;男神已经改变了&quot;</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    请选择你心中的女神:</span><br><span class="line">    <span class="comment">&lt;!--静态注册onchange事件--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">onchange</span>=<span class="string">&quot;onchangeFun();&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>--女神--<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>芳芳<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>佳佳<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>哈哈<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    请选择你心中的男神:</span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;sel01&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>--男神--<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>国歌<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>华仔<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">option</span>&gt;</span>福成<span class="tag">&lt;/<span class="name">option</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>onblur事件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="function"><span class="keyword">function</span> <span class="title">onblurFun</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">//console是控制台对象，有js提供专门用来向浏览器的控制器打印输出，用于测试使用</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//log()是打印的方法</span></span></span><br><span class="line"><span class="javascript">            <span class="built_in">console</span>.log(<span class="string">&quot;静态注册失去焦点事件&quot;</span>);</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="comment">//动态注册onblur事件</span></span></span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">//获取标签方式</span></span></span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> passwordObj=<span class="built_in">document</span>.getElementById(<span class="string">&quot;password&quot;</span>);</span></span><br><span class="line"><span class="javascript">            <span class="comment">//alert(passwordObj);</span></span></span><br><span class="line"><span class="javascript">            <span class="comment">//标签对象.事件名=function()&#123;&#125;</span></span></span><br><span class="line"><span class="javascript">            passwordObj.onblur=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                <span class="built_in">console</span>.log(<span class="string">&quot;动态注册失去焦点事件&quot;</span>);</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    用户名：<span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span> <span class="attr">onblur</span>=<span class="string">&quot;onblurFun();&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line">    密码：<span class="tag">&lt;<span class="name">input</span> <span class="attr">id</span>=<span class="string">&quot;password&quot;</span> <span class="attr">type</span>=<span class="string">&quot;text&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">br</span>/&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>onsubmit事件</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">&quot;UTF-8&quot;</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">title</span>&gt;</span>Title<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span></span><br><span class="line"><span class="javascript">        <span class="function"><span class="keyword">function</span>  <span class="title">onsubmitFun</span>(<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="comment">//要验证所有表单项是否合法 如果不合法就阻止表单提交</span></span></span><br><span class="line"><span class="javascript">            alert(<span class="string">&quot;静态注册表单提交事件--发现不合法&quot;</span>);</span></span><br><span class="line"><span class="javascript">            <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">        &#125;</span><br><span class="line"><span class="javascript">        <span class="built_in">window</span>.onload=<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</span></span><br><span class="line"><span class="javascript">            <span class="keyword">var</span> formObj=<span class="built_in">document</span>.getElementById(<span class="string">&quot;form01&quot;</span>);</span></span><br><span class="line"><span class="javascript">            <span class="comment">//alert(foemObj);</span></span></span><br><span class="line"><span class="javascript">            formObj.onsubmit=<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span></span><br><span class="line"><span class="javascript">                alert(<span class="string">&quot;动态注册法相表单不合法&quot;</span>);</span></span><br><span class="line"><span class="javascript">                <span class="keyword">return</span> <span class="literal">false</span>;</span></span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!--return false组织表单提交--&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;http://localhost:8080&quot;</span> <span class="attr">method</span>=<span class="string">&quot;get&quot;</span> <span class="attr">onsubmit</span>=<span class="string">&quot;return onsubmitFun();&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;静态注册&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">form</span> <span class="attr">action</span>=<span class="string">&quot;http://localhost:8080&quot;</span> <span class="attr">id</span>=<span class="string">&quot;form01&quot;</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">&quot;submit&quot;</span> <span class="attr">value</span>=<span class="string">&quot;动态注册&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">form</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+</li>
+</ul>
+<h3 id="DOM模型"><a href="#DOM模型" class="headerlink" title="DOM模型"></a>DOM模型</h3><p>DOM全称是document object model</p>
+<p>将文档中的标签，属性，文本，转换成为对象管理</p>
+<p>Document 对象的理解： </p>
+<p>第一点：Document 它管理了所有的 HTML 文档内容。 </p>
+<p>第二点：document 它是一种树结构的文档。有层级关系。 </p>
+<p>第三点：它让我们把所有的标签 都 对象化 </p>
+<p>第四点：我们可以通过 document 访问所有的标签对象。</p>
+<h4 id="Document对象方法介绍"><a href="#Document对象方法介绍" class="headerlink" title="Document对象方法介绍"></a>Document对象方法介绍</h4><ul>
+<li><p>document.getElementById(elementId)</p>
+<p>通过标签的 id 属性查找标签 dom 对象，elementId 是标签的 id 属性值 </p>
+</li>
+<li><p>document.getElementsByName(elementName)</p>
+<p> 通过标签的 name 属性查找标签 dom 对象，elementName 标签的 name 属性值 </p>
+</li>
+<li><p>document.getElementsByTagName(tagname)</p>
+<p> 通过标签名查找标签 dom 对象。tagname 是标签名 </p>
+</li>
+<li><p>document.createElement( tagName)</p>
+<p> 方法，通过给定的标签名，创建一个标签对象。tagName 是要创建的标签名</p>
+</li>
+</ul>
+<p>注：document 对象的三个查询方法，如果有 id 属性，优先使用 getElementById 方法来进行查询 。如果没有 id 属性，则优先使用 getElementsByName 方法来进行查询 如果 id 属性和 name 属性都没有最后再按标签名查 getElementsByTagName 。以上三个方法，一定要在页面加载完成之后执行，才能查询到标签对象</p>
+<h4 id="节点的常用属性和方法"><a href="#节点的常用属性和方法" class="headerlink" title="节点的常用属性和方法"></a>节点的常用属性和方法</h4><p>节点就是标签对象</p>
+<p>方法： </p>
+<p>通过具体的元素节点调用 getElementsByTagName() 方法，获取当前节点的指定标签名孩子节点 appendChild( oChildNode ) 方法，可以添加一个子节点，oChildNode 是要添加的孩子节点 </p>
+<p>属性： </p>
+<p>childNodes </p>
+<p>属性，获取当前节点的所有子节点 </p>
+<p>firstChild </p>
+<p>属性，获取当前节点的第一个子节点 </p>
+<p>lastChild </p>
+<p>属性，获取当前节点的最后一个子节点 </p>
+<p>parentNode </p>
+<p>属性，获取当前节点的父节点 </p>
+<p>nextSibling </p>
+<p>属性，获取当前节点的下一个节点 </p>
+<p>previousSibling </p>
+<p>属性，获取当前节点的上一个节点 </p>
+<p>className </p>
+<p>用于获取或设置标签的 class 属性值 </p>
+<p>innerHTML </p>
+<p>属性，表示获取/设置起始标签和结束标签中的内容 </p>
+<p>innerText </p>
+<p>  属性，表示获取/设置起始标签和结束标签中的文本</p>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+    
+
+    <span class="post-tags">
+      <i class="icon-tags"></i>
+        <a href="/tags/JavaWeb/">JavaWeb</a>
+    </span>
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2020 John Doe
+    
+  </p>
+</footer>
+    
+    
+  </div>
+</div>
+</body>
+</html>
